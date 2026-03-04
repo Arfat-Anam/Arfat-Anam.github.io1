@@ -1,0 +1,32 @@
+/* Professional Color Palette */
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --text: #333;
+    --light: #f4f7f6;
+}
+
+body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--text); background: var(--light); line-height: 1.6; }
+
+/* Navigation */
+nav { background: var(--primary); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: 600; transition: 0.3s; }
+nav a:hover { color: var(--secondary); border-bottom: 2px solid var(--secondary); }
+
+/* Containers */
+.container { max-width: 900px; margin: 40px auto; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+
+/* Profile Image */
+.profile-img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid var(--secondary); margin-bottom: 20px; transition: transform 0.3s; }
+.profile-img:hover { transform: scale(1.05); }
+
+/* Typography */
+h1 { color: var(--primary); margin-bottom: 10px; }
+h2 { color: var(--secondary); border-bottom: 2px solid #eee; display: inline-block; padding-bottom: 5px; }
+p { color: #555; font-size: 1.1rem; }
+
+/* Skills Grid */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+.skill-card { background: #eef2f3; padding: 15px; border-radius: 8px; font-weight: bold; color: var(--primary); border-left: 5px solid var(--secondary); }
+
+footer { margin-top: 50px; padding: 20px; font-size: 0.9rem; color: #888; }
